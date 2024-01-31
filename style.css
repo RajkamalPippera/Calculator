@@ -1,0 +1,91 @@
+.calculator {
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    border: 15px solid white;
+    border-style: outset;
+    padding: 40px;
+    border-radius: 20px;
+    background-color:#f6d7b0;
+    box-shadow: 5px 5px 5px black;
+    animation: cal 1s linear 1;
+ 
+}
+@keyframes cal {
+    from{
+        transform: translatey(-200px);
+    }
+    to{
+        transform: translatey(0px);
+    }
+    
+}
+body{
+    background-color: #e1bf92;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border: 5px solid white;
+    border-radius: 10%;
+    border-style: inset;
+    box-shadow: 5px 5px 5px black;
+    animation: btn 1s linear 1;
+  
+}
+@keyframes btn {
+    from{
+        transform: translateX(400px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+button:active{
+    transform: scale(0.98);
+}
+
+
+button:hover {
+    background-color: white;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    left: -20px;
+    border-radius: 10px;
+    border-style: inset;
+    animation: inp 1s linear 1;
+  
+}
+@keyframes inp {
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
